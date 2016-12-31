@@ -65,7 +65,7 @@ import matplotlib.patches as patches
 #INPUTS:
 r = 1# radius
 size = 5# figure size in inches
-N = 64# Number of encoder lines (must be even)
+N = 64# Number of encoder lines
 res = 72# Number of dots per inch
 # End of INPUTS
 dtheta = 2*math.pi/N # Angular increment
@@ -97,17 +97,14 @@ while ang < 2*math.pi-dtheta:
     pathw = Path(vertsw, codes)
     patchb = patches.PathPatch(pathb, facecolor='black', lw=0)
     ax.add_patch(patchb)
-    patchw = patches.PathPatch(pathw,color='white',facecolor='red', lw=0)
+    patchw = patches.PathPatch(pathw, facecolor='white', lw=0)
     ax.add_patch(patchw)
     
 verts1 = [(0.0,-0.02),(0.0,0.02),(-0.02, 0.0), (0.02,0.0)]
-#verts2 = [(-0.01, 0.0), (0.01,0.0)]
 codes1 = [Path.MOVETO,Path.LINETO,Path.MOVETO,Path.LINETO]
-#codes2 = [Path.MOVETO,Path.LINETO]
 path1 = Path(verts1, codes1)
 patch1 = patches.PathPatch(path1, color='black', lw=1)
 
-#circle = patches.Circle((0.,0.),  radius=0.1, color='g', fill=True, ec="none")
 circle1 = patches.Circle((0.,0.),  radius=0.1, color='white', ec='black',fill=True)
 circle2 = patches.Circle((0.,0.),  radius=0.25, color='black', fill=False)
 circle3 = patches.Circle((0.,0.),  radius=0.5, color='black', fill=False)
