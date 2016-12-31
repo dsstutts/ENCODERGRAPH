@@ -1,0 +1,6 @@
+# Ignore the following files and subdirectories:
+*.png
+*.eps
+*.xml
+*.iml
+*.eps
