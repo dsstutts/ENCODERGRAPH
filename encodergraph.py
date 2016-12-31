@@ -49,7 +49,7 @@ of this software include the following citation:
 @Misc{encodergraph-,
 author =   {Stutts, Daniel. S.},
 title = {{encodergraph.py}: {Plots rotary optical encoder masks on transparencies}},
-howpublished = {/url{https://github.com/dsstutts/ENCODERGRAPH.git}},
+howpublished = {\\url{https://github.com/dsstutts/ENCODERGRAPH.git}},
 year = {2016}}
 
  #
